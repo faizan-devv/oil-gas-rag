@@ -1,0 +1,37 @@
+log_id,equipment_id,fault_code,fault_description,action_taken,action_category,engineer_name,date,date_source,resolution_status,source_file
+LOG-0001,TOP-DRIVE-02,FLT-0521,gearbox oil running over temperature,drained and replaced the gearbox oil,lubrication,Priya Raman,2025-02-12,text,escalated,maintenance_log_2025-02.jsonl
+LOG-0002,BOP-STACK-01,,routine function check after the rig move,full pressure test carried out,pressure_test,PR,2025-03-03,text,pending,maintenance_log_2025-03.jsonl
+LOG-0003,DRAWWORKS-01,FLT-0802,brake pads worn beyond limit,new brake pads fitted,part_replacement,SM,2025-03-17,text,escalated,maintenance_log_2025-03.jsonl
+LOG-0004,BOP-STACK-01,FLT-0610,accumulator pressure low,recharged the accumulator bottles,lubrication,Patel,2025-01-25,timestamp,pending,maintenance_log_2025-01.jsonl
+LOG-0005,MUD-PUMP-01,FLT-0417,liner worn and discharge pressure low,fitted a new liner,part_replacement,SM,2025-02-18,text,pending,maintenance_log_2025-02.jsonl
+LOG-0006,MUD-PUMP-02,FLT-0392,piston seal leak at the fluid end,piston seal was changed out,seal_replacement,Eriksen,2025-02-26,text,pending,maintenance_log_2025-02.jsonl
+LOG-0007,DRAWWORKS-01,FLT-0802,brake pads were worn beyond limit,brake pad change carried out,part_replacement,AS,2025-01-30,text,pending,maintenance_log_2025-01.jsonl
+LOG-0008,SHALE-SHAKER-01,FLT-0704,torn screen on the bottom deck,replaced the screen,part_replacement,James Okafor,2025-03-11,timestamp,resolved,maintenance_log_2025-03.jsonl
+LOG-0009,TOP-DRIVE-01,FLT-0521,gearbox oil running over temperature,drained and replaced the gearbox oil,lubrication,James Okafor,2025-02-25,text,resolved,maintenance_log_2025-02.jsonl
+LOG-0013,DRAWWORKS-01,,drive chain was running dry,greased the drive chain,lubrication,Tom Hallworth,2025-03-02,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0014,TOP-DRIVE-01,FLT-0521,gearbox oil running over temperature,gearbox oil change carried out,lubrication,Hallworth,2025-03-13,text,pending,maintenance_log_2025-03.jsonl
+LOG-0015,SHALE-SHAKER-01,FLT-0719,vibrator motor failed,replaced the vibrator motor,part_replacement,MK,2025-03-10,text,pending,maintenance_log_2025-03.jsonl
+LOG-0016,BOP-STACK-01,FLT-0633,annular preventer element was leaking,annular element swap,part_replacement,TH,2025-02-01,text,escalated,maintenance_log_2025-02.jsonl
+LOG-0017,DRAWWORKS-01,,drive chain was running dry,greased the drive chain,lubrication,T. Hallworth,2025-01-29,text,resolved,maintenance_log_2025-01.jsonl
+LOG-0018,BOP-STACK-01,FLT-0633,annular preventer element leaking,annular element swap carried out,part_replacement,PR,2025-03-14,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0020,SHALE-SHAKER-01,FLT-0719,vibrator motor failed,replaced the vibrator motor,part_replacement,Sarah McAllister,2025-02-11,timestamp,escalated,maintenance_log_2025-02.jsonl
+LOG-0021,BOP-STACK-01,FLT-0610,accumulator pressure low,recharged the accumulator bottles and tested OK,pressure_test,M. Kowalczyk,2025-02-17,text,resolved,maintenance_log_2025-02.jsonl
+LOG-0022,SHALE-SHAKER-03,FLT-0719,vibrator motor failed,replaced the vibrator motor,part_replacement,Aisha Siddiqui,2025-03-28,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0023,MUD-PUMP-01,FLT-0392,piston seal leaking at the fluid end,seal swap carried out,seal_replacement,LE,2025-01-09,text,resolved,maintenance_log_2025-01.jsonl
+LOG-0024,SHALE-SHAKER-03,,screens blinded with sticky clay,pressure washed the screens,cleaning,Kowalczyk,2025-03-27,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0025,MUD-PUMP-02,FLT-0417,liner worn discharge pressure low,replaced the liner,part_replacement,Raman,2025-03-21,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0026,BOP-STACK-01,,routine function check after the rig move,full pressure test carried out,pressure_test,Sarah McAllister,2025-03-14,text,pending,maintenance_log_2025-03.jsonl
+LOG-0027,MUD-PUMP-01,FLT-0417,liner worn and discharge pressure low,fitted a new liner,part_replacement,Raman,2025-03-13,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0028,DRAWWORKS-01,,drive chain running dry,chain lubricated,lubrication,MK,2025-03-12,text,escalated,maintenance_log_2025-03.jsonl
+LOG-0029,MUD-PUMP-01,FLT-0392,piston seal leak at the fluid end,changed out the piston seal,seal_replacement,LE,2025-01-13,timestamp,pending,maintenance_log_2025-01.jsonl
+LOG-0030,BOP-STACK-01,FLT-0610,accumulator pressure low,accumulator pre-charge restored,recalibration,LE,2025-03-29,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0032,SHALE-SHAKER-03,FLT-0719,vibrator motor failed,motor swap carried out,part_replacement,Eriksen,2025-02-03,text,resolved,maintenance_log_2025-02.jsonl
+LOG-0033,MUD-PUMP-03,,suction strainer partially blocked with debris,strainer was pulled and flushed,cleaning,Dev Patel,2025-03-08,text,pending,maintenance_log_2025-03.jsonl
+LOG-0034,BOP-STACK-01,,routine function check after rig move,pressure tested the stack,pressure_test,JO,2025-01-25,text,pending,maintenance_log_2025-01.jsonl
+LOG-0035,DRAWWORKS-01,,drive chain running dry,greased the drive chain,lubrication,Raman,2025-01-13,text,escalated,maintenance_log_2025-01.jsonl
+LOG-0037,DRAWWORKS-01,,drive chain was running dry,chain was lubricated,lubrication,Maria Kowalczyk,2025-01-14,text,resolved,maintenance_log_2025-01.jsonl
+LOG-0038,TOP-DRIVE-02,FLT-0538,high vibration on the main bearing,replaced the main bearing,bearing_replacement,D. Patel,2025-02-19,text,resolved,maintenance_log_2025-02.jsonl
+LOG-0039,TOP-DRIVE-02,FLT-0521,gearbox oil was running over temperature,drained and replaced the gearbox oil,lubrication,Sarah McAllister,2025-03-29,text,escalated,maintenance_log_2025-03.jsonl
+LOG-0040,TOP-DRIVE-02,FLT-0521,gearbox oil running over temperature,gearbox oil change,lubrication,A. Siddiqui,2025-03-22,text,resolved,maintenance_log_2025-03.jsonl
+LOG-0041,BOP-STACK-01,FLT-0610,accumulator pressure low,accumulator pre-charge was restored,recalibration,James Okafor,2025-02-16,text,escalated,maintenance_log_2025-02.jsonl
+LOG-0042,SHALE-SHAKER-02,,screens blinded with sticky clay,washed down the screens to remove the buildup,cleaning,Okafor,2025-03-20,text,escalated,maintenance_log_2025-03.jsonl

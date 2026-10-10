@@ -4,9 +4,9 @@
 
 | Strategy | Total score | equipment_id | fault_code | fault_description | action_taken | engineer_name | date | resolution_status | Valid JSON | Avg prompt tokens | Avg output tokens |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| zero_shot | **33/35** | 4/5 | 5/5 | 5/5 | 4/5 | 5/5 | 5/5 | 5/5 | 5/5 | 467 | 95 |
-| few_shot | **33/35** | 4/5 | 5/5 | 5/5 | 4/5 | 5/5 | 5/5 | 5/5 | 5/5 | 743 | 85 |
-| chain_of_thought | **32/35** | 5/5 | 5/5 | 5/5 | 4/5 | 3/5 | 5/5 | 5/5 | 5/5 | 516 | 348 |
+| zero_shot | **33/35** | 4/5 | 5/5 | 5/5 | 4/5 | 5/5 | 5/5 | 5/5 | 5/5 | 486 | 95 |
+| few_shot | **33/35** | 4/5 | 5/5 | 5/5 | 4/5 | 5/5 | 5/5 | 5/5 | 5/5 | 762 | 85 |
+| chain_of_thought | **32/35** | 5/5 | 5/5 | 5/5 | 4/5 | 3/5 | 5/5 | 5/5 | 5/5 | 535 | 352 |
 
 ### Score per input
 
@@ -22,9 +22,9 @@
 
 | Strategy | Total score | equipment_id | fault_code | fault_description | action_taken | engineer_name | date | resolution_status | Valid JSON | Avg prompt tokens | Avg output tokens |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| zero_shot | **284/294** | 41/42 | 42/42 | 40/42 | 38/42 | 39/42 | 42/42 | 42/42 | 42/42 | 467 | 97 |
-| few_shot | **285/294** | 41/42 | 42/42 | 39/42 | 38/42 | 42/42 | 42/42 | 41/42 | 42/42 | 743 | 86 |
-| chain_of_thought | **276/294** | 41/42 | 42/42 | 39/42 | 37/42 | 33/42 | 42/42 | 42/42 | 42/42 | 516 | 340 |
+| zero_shot | **286/294** | 41/42 | 42/42 | 42/42 | 38/42 | 39/42 | 42/42 | 42/42 | 42/42 | 486 | 97 |
+| few_shot | **289/294** | 41/42 | 42/42 | 42/42 | 38/42 | 42/42 | 42/42 | 42/42 | 42/42 | 762 | 87 |
+| chain_of_thought | **277.5/294** | 41/42 | 42/42 | 40.5/42 | 37/42 | 33/42 | 42/42 | 42/42 | 42/42 | 535 | 340 |
 
 ## Test inputs and raw outputs
 
@@ -60,13 +60,13 @@
 ```
 ### REASONING
 
-- **equipment_id**: The entry starts with "DRAWWORKS-01", which is the equipment tag exactly as written.  
-- **fault_code**: The entry includes "FLT-0802", which is the fault code exactly as written.  
-- **fault_description**: The entry states "brake pads worn beyond limit", which describes the fault.  
-- **action_taken**: The entry says "new brake pads fitted", which is the action taken.  
-- **action_category**: The action was "new brake pads fitted", which falls under **part_replacement** (brake pads are a part).  
-- **engineer_name**: The entry ends with "SM", which is the engineer's initials exactly as written.  
-- **date**: The entry includes "17/03/2025", which is the date of the work exactly as written.  
+- **equipment_id**: The entry starts with "DRAWWORKS-01", which is the equipment tag. This is taken directly from the log.
+- **fault_code**: The entry includes "FLT-0802", which is the fault code. This is taken directly from the log.
+- **fault_description**: The entry states "brake pads worn beyond limit", which describes the fault.
+- **action_taken**: The entry says "new brake pads fitted", which is the action taken.
+- **action_category**: The action is "new brake pads fitted", which falls under **part_replacement** (brake pads are a part).
+- **engineer_name**: The entry ends with "SM", which is the engineer's initials. This is taken directly from the log.
+- **date**: The entry includes "17/03/2025", which is the date of the work.
 - **resolution_status**: The entry states "Fault came back and has been escalated to the OEM for support", which indicates the status is **escalated**.
 
 ### FINAL JSON
@@ -108,7 +108,7 @@
 **few_shot** (6/7):
 
 ```
-{"equipment_id": "TOP-DRIVE", "fault_code": "FLT-0521", "fault_description": "gearbox oil running over temperature", "action_taken": "gearbox oil change", "action_category": "lubrication", "engineer_name": "Lars Eriksen", "date": "17/01/2025", "resolution_status": "resolved"}
+{"equipment_id": "TOP-DRIVE-01", "fault_code": "FLT-0521", "fault_description": "gearbox oil running over temperature", "action_taken": "gearbox oil change", "action_category": "lubrication", "engineer_name": "Lars Eriksen", "date": "17/01/2025", "resolution_status": "resolved"}
 ```
 
 **chain_of_thought** (7/7):
@@ -116,14 +116,14 @@
 ```
 ### REASONING
 
-- **equipment_id**: The log entry does not mention an equipment tag or ID. The term "top drive" is used, but it is not a specific equipment tag. Therefore, `null`.
-- **fault_code**: The log entry explicitly states "fault code FLT-0521". This is the exact fault code as written. So, `FLT-0521`.
-- **fault_description**: The log states "gearbox oil running over temperature". This is the description of the fault. So, "gearbox oil running over temperature".
-- **action_taken**: The log states "a gearbox oil change was carried out". This is the action taken. So, "gearbox oil change was carried out".
-- **action_category**: The action taken was a "gearbox oil change", which falls under the category of **lubrication** (oil was changed). So, `lubrication`.
-- **engineer_name**: The log states "Logged by Lars Eriksen". The name is given exactly as written. So, `Lars Eriksen`.
-- **date**: The log states "On 17/01/2025". This is the exact date as written. So, `17/01/2025`.
-- **resolution_status**: The log states "the top drive was tested and found to be functioning correctly, returning to service". This indicates the issue was resolved. So, `resolved`.
+- **equipment_id**: The log entry does not mention an equipment tag or ID. The term "top drive" is used, but it is not a specific equipment tag. Therefore, it is null.
+- **fault_code**: The log entry explicitly states "fault code FLT-0521". This is the exact fault code as written.
+- **fault_description**: The log entry states "gearbox oil running over temperature". This is the description of the fault.
+- **action_taken**: The log entry states "a gearbox oil change was carried out to address the issue". This is the action taken.
+- **action_category**: The action taken is "gearbox oil change", which falls under the category of **lubrication**.
+- **engineer_name**: The log entry states "Logged by Lars Eriksen". The engineer's name is "Lars Eriksen".
+- **date**: The log entry states "On 17/01/2025". This is the exact date as written.
+- **resolution_status**: The log entry states "the top drive was tested and found to be functioning correctly, returning to service". This indicates the issue was resolved, so the status is **resolved**.
 
 ### FINAL JSON
 
@@ -132,7 +132,7 @@
   "equipment_id": null,
   "fault_code": "FLT-0521",
   "fault_description": "gearbox oil running over temperature",
-  "action_taken": "gearbox oil change was carried out",
+  "action_taken": "gearbox oil change",
   "action_category": "lubrication",
   "engineer_name": "Lars Eriksen",
   "date": "17/01/2025",
@@ -165,7 +165,7 @@
 **few_shot** (6/7):
 
 ```
-{"equipment_id": "BOP-STACK-01", "fault_code": "FLT-0633", "fault_description": "annular preventer element was leaking", "action_taken": "annular element swap was carried out", "action_category": "part_replacement", "engineer_name": "TH", "date": "February 1, 2025", "resolution_status": "escalated"}
+{"equipment_id": "BOP-STACK-01", "fault_code": "FLT-0633", "fault_description": "annular preventer element was leaking", "action_taken": "annular element swap", "action_category": "part_replacement", "engineer_name": "TH", "date": "February 1, 2025", "resolution_status": "escalated"}
 ```
 
 **chain_of_thought** (5/7):
@@ -176,19 +176,20 @@
 - **equipment_id**: The entry states "BOP-STACK-01" which is the equipment tag. This is taken directly from the log.
 - **fault_code**: The entry mentions "Fault code FLT-0633" which is the exact fault code.
 - **fault_description**: The log says "annular preventer element was leaking" which describes the issue.
-- **action_taken**: The action taken was "an annular element swap was carried out".
-- **action_category**: The action is "annular element swap", which is a type of part replacement (the annular element is a part). Therefore, the category is **part_replacement**.
+- **action_taken**: The entry states "An annular element swap was carried out" which is the action taken.
+- **action_category**: The action is "annular element swap" which is a type of part replacement. Therefore, the category is **part_replacement**.
 - **engineer_name**: The log does not mention the name or initials of the engineer, so this is **null**.
 - **date**: The log states "February 1, 2025" which is the exact date of the work.
-- **resolution_status**: The log says "it is beyond what can be done on site and has been escalated to onshore engineering", which indicates the issue has been **escalated**.
+- **resolution_status**: The log says "it is beyond what can be done on site and has been escalated to onshore engineering" which indicates the issue has been **escalated**.
 
 ### FINAL JSON
+
 ```json
 {
   "equipment_id": "BOP-STACK-01",
   "fault_code": "FLT-0633",
   "fault_description": "annular preventer element was leaking",
-  "action_taken": "an annular element swap was carried out",
+  "action_taken": "An annular element swap was carried out",
   "action_category": "part_replacement",
   "engineer_name": null,
   "date": "February 1, 2025",
@@ -230,15 +231,33 @@
 ### REASONING
 
 - **equipment_id**: The log entry mentions "DRAWWORKS-01", which is the exact equipment tag.  
+  → `DRAWWORKS-01`
+
 - **fault_code**: The entry does not mention any fault code.  
-- **fault_description**: The entry states "drive chain running dry", which describes the issue.  
+  → `null`
+
+- **fault_description**: The entry states "the drive chain running dry", which describes the issue.  
+  → `"drive chain running dry"`
+
 - **action_taken**: The engineer "chain lubricated it", which is the action taken.  
-- **action_category**: The action "chain lubricated it" falls under the **lubrication** category.  
+  → `"chain lubricated it"`
+
+- **action_category**: The action "chain lubricated it" falls under the category of **lubrication**.  
+  → `"lubrication"`
+
 - **engineer_name**: The entry ends with "MK", which is the engineer's initials.  
-- **date**: The log entry starts with "March 12, 2025", which is the exact date of the work.  
-- **resolution_status**: The entry states "the problem persists and has been escalated to the maintenance supervisor", which indicates the status is **escalated**.
+  → `"MK"`
+
+- **date**: The log entry starts with "March 12, 2025", which is the exact date.  
+  → `"March 12, 2025"`
+
+- **resolution_status**: The entry states "the problem persists and has been escalated to the maintenance supervisor", which indicates the issue is **escalated**.  
+  → `"escalated"`
+
+---
 
 ### FINAL JSON
+
 ```json
 {
   "equipment_id": "DRAWWORKS-01",
@@ -288,11 +307,11 @@
 - **equipment_id**: The log entry states "Worked on MUD-PUMP-01 this shift", so the equipment ID is **MUD-PUMP-01**.
 - **fault_code**: The log mentions "fault code FLT-0392 showed up on the panel", so the fault code is **FLT-0392**.
 - **fault_description**: The log says "fault code FLT-0392 showed up on the panel indicating a piston seal leak at the fluid end", so the fault description is **piston seal leak at the fluid end**.
-- **action_taken**: The log states "Changed out the piston seal as per the issue", so the action taken is **Changed out the piston seal**.
-- **action_category**: The action was replacing a **piston seal**, which falls under **seal_replacement**.
+- **action_taken**: The log states "Changed out the piston seal as per the issue", so the action taken is **changed out the piston seal**.
+- **action_category**: The action was replacing a seal, so the category is **seal_replacement**.
 - **engineer_name**: The log does not mention the engineer's name or initials, so it is **null**.
 - **date**: The log says "this shift" but does not provide a specific calendar date, so the date is **null**.
-- **resolution_status**: The log states "got the unit running again but still waiting on parts to finish the job", which indicates the issue is **pending**.
+- **resolution_status**: The log states "got the unit running again but still waiting on parts to finish the job", which indicates the job is not fully resolved yet, so the status is **pending**.
 
 ### FINAL JSON
 ```json
@@ -300,7 +319,7 @@
   "equipment_id": "MUD-PUMP-01",
   "fault_code": "FLT-0392",
   "fault_description": "piston seal leak at the fluid end",
-  "action_taken": "Changed out the piston seal",
+  "action_taken": "changed out the piston seal",
   "action_category": "seal_replacement",
   "engineer_name": null,
   "date": null,

@@ -1,4 +1,4 @@
-"""Completeness and consistency checks. A record that fails any check is quarantined."""
+"""Completeness, consistency and grounding checks. A record that fails any check is quarantined."""
 
 from app.catalog import ACTION_CATEGORIES, EQUIPMENT_ID_RE, FAULT_CODE_RE, RESOLUTION_STATUSES
 from app.extraction.schema import REQUIRED_FIELDS
@@ -9,6 +9,7 @@ BAD_DATE = "BAD_DATE"
 BAD_EQUIPMENT_ID = "BAD_EQUIPMENT_ID"
 BAD_FAULT_CODE = "BAD_FAULT_CODE"
 BAD_ENUM = "BAD_ENUM"
+NOT_IN_SOURCE = "NOT_IN_SOURCE"
 LLM_PARSE_ERROR = "LLM_PARSE_ERROR"
 
 
@@ -41,5 +42,19 @@ def consistency(record: dict, timestamp: str | None) -> list[dict]:
     return problems
 
 
-def check(record: dict, timestamp: str | None) -> list[dict]:
-    return completeness(record) + consistency(record, timestamp)
+def grounding(record: dict, log_text: str) -> list[dict]:
+    """Fields that are copied, not interpreted, must appear in the entry.
+
+    A format check cannot catch a well-formed value the model made up: given
+    "the top drive" with no tag, it returned TOP-DRIVE-01, which matches
+    FAMILY-NN. Requiring the value to be in the source text does catch it."""
+    source = log_text.lower()
+    return [
+        {"code": NOT_IN_SOURCE, "field": field, "detail": f"{field} '{record[field]}' does not appear in the entry text"}
+        for field in ("equipment_id", "fault_code", "engineer_name")
+        if record.get(field) and record[field].lower() not in source
+    ]
+
+
+def check(record: dict, timestamp: str | None, log_text: str) -> list[dict]:
+    return completeness(record) + consistency(record, timestamp) + grounding(record, log_text)
