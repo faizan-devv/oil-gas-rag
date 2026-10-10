@@ -1,0 +1,24 @@
+WELL COMPLETION REPORT SUMMARY
+
+Well ID: WELL-3120-SE
+Operator: Caldera Offshore
+Completion Date: 2024-07-05
+Measured Depth (m): 4493.0
+Formation: Bunter
+Completion Status: Successful
+
+1. Summary
+
+Well WELL-3120-SE, operated by Caldera Offshore in the Bunter formation, was successfully completed on 2024-07-05. The well was completed according to plan and handed over to production. Despite encountering several operational challenges, including perforating gun misfires, a failed packer setting, and a stuck logging tool, the completion was ultimately successful. The issues required additional time and effort but did not prevent the well from achieving its intended outcome.
+
+2. Operations Overview
+
+The completion of WELL-3120-SE followed a standard sequence, beginning with casing operations and progressing through perforation, packer setting, and wireline logging. The well was drilled to a measured depth of 4493.0 m and completed in the Bunter formation. A series of perforating runs were conducted to establish the desired flow paths. A production packer was set to isolate the production zone, and open-hole logging was performed to assess formation characteristics. The well was then handed over to production after all completion activities were completed.
+
+3. Issues Encountered
+
+A perforating gun misfire occurred during run 4, with the guns across the interval 1318-1329 m MD failing to fire. This required an additional perforating run to ensure the desired interval was properly stimulated. A second issue involved the production packer, which failed to set on the first attempt at 4205 m MD. The packer was retrieved, redressed, and set successfully on the second run, which added 15 hours of rig time. Finally, a wireline logging tool became stuck at 3161 m MD, necessitating a fishing operation that lasted 19 hours to recover the tool. Each of these issues required additional planning and operational adjustments to ensure the completion was completed successfully.
+
+4. Recommendations
+
+To prevent similar issues in future operations, it is recommended to verify detonator continuity at the surface and carry a backup firing head for each perforating run. Packer setting tools should be function-tested at the surface before being run in hole. Additionally, a wiper trip should be conducted and the hole conditioned prior to open-hole wireline logging to reduce the risk of tool sticking.

@@ -1,0 +1,24 @@
+WELL COMPLETION REPORT SUMMARY
+
+Well ID: WELL-4033-NW
+Operator: Northmoor Energy
+Completion Date: 2024-05-20
+Measured Depth (m): 3228.7
+Formation: Chalk
+Completion Status: Successful
+
+1. Summary
+
+Well-4033-NW, operated by Northmoor Energy in the Chalk formation, was successfully completed on 20 May 2024. The well was completed according to plan and has been handed over to production. Despite encountering two operational challenges during the completion process, the well remains in good condition and is ready for production. The issues encountered were resolved without incident, and the well is now in a stable state for ongoing operations.
+
+2. Operations Overview
+
+The completion of Well-4033-NW followed the planned sequence, including the installation of casing, completion of the wellbore, and the installation of production equipment. The completion process involved running the tubing string, setting the packer, and installing the tubing hanger. Following the installation of the wellhead, a pressure test was conducted to verify the integrity of the completion. Once all tests were successfully completed, the well was prepared for handover to production. The entire process was carried out in accordance with the well completion plan and met all operational and safety requirements.
+
+3. Issues Encountered
+
+During the clean-up flow phase of the completion, H2S was detected at the surface at a concentration of 52 ppm. This prompted an immediate suspension of operations for four hours to allow for proper ventilation of the area. Safety protocols were followed, and the area was deemed safe before resuming operations. A second issue occurred during the wellhead pressure test at 7500 psi, when the tubing hanger seal was found to be leaking. The seal was promptly replaced, and the test was repeated successfully. The leak was identified early, and the necessary spare parts were available on site, allowing for a quick resolution of the issue without delaying the overall completion schedule.
+
+4. Recommendations
+
+To prevent similar occurrences in the future, continuous H2S monitoring and scavenger treatment should be added to the clean-up programme. Additionally, it is recommended that the tubing hanger seal surfaces be inspected before landing to ensure a proper seal. A spare seal kit should also be kept on location to allow for quick replacement in the event of a seal failure during pressure testing.

@@ -1,0 +1,24 @@
+WELL COMPLETION REPORT SUMMARY
+
+Well ID: WELL-1402-SE
+Operator: Halden Petroleum
+Completion Date: 2024-10-31
+Measured Depth (m): 2702.2
+Formation: Chalk
+Completion Status: Successful
+
+1. Summary
+
+Well WELL-1402-SE, operated by Halden Petroleum in the Chalk formation, was successfully completed on 2024-10-31. The well was completed as planned and handed over to production. However, several challenges were encountered during the completion process, including equipment failure, H2S detection, and tool retrieval issues. These issues added significant rig time and required additional safety measures. Despite these challenges, the well was successfully completed and is now in production.
+
+2. Operations Overview
+
+The completion of Well WELL-1402-SE followed a standard procedure for the Chalk formation. The well was drilled to a measured depth of 2702.2 m and prepared for completion. A production packer was run to isolate the producing interval, followed by the installation of completion tubing and associated equipment. A clean-up flow was performed to remove drilling fluids and debris from the wellbore. Wireline logging was conducted to assess the formation characteristics and ensure the well was ready for production. Once all completion activities were completed, the well was handed over to production operations.
+
+3. Issues Encountered
+
+The production packer failed to set on the first attempt at 2251 m MD, which required retrieving the tool, redressing it, and running it again. This delay added 29 hours of rig time and impacted the overall schedule of the completion operation. H2S was detected at the surface at 47 ppm during the clean-up flow, which led to a 6-hour suspension of operations while the area was ventilated to ensure the safety of personnel and equipment. Lastly, the wireline logging tool became stuck at 1333 m MD, necessitating a 27-hour fishing operation to recover the tool. These issues collectively added significant time and resources to the completion process, highlighting the need for improved planning and safety protocols.
+
+4. Recommendations
+
+To prevent similar issues in the future, it is recommended that packer setting tools be function-tested at the surface before running in hole. Continuous H2S monitoring and scavenger treatment should be included in the clean-up programme to mitigate potential safety risks. Additionally, a wiper trip and hole conditioning should be performed before open-hole wireline logging to reduce the risk of tool sticking and improve operational efficiency.

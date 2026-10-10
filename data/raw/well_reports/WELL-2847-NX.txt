@@ -1,0 +1,24 @@
+WELL COMPLETION REPORT SUMMARY
+
+Well ID: WELL-2847-NX
+Operator: Northmoor Energy
+Completion Date: 2024-10-20
+Measured Depth (m): 3941.2
+Formation: Bunter
+Completion Status: Successful
+
+1. Summary
+
+Well-2847-NX, operated by Northmoor Energy in the Bunter formation, was successfully completed on 20 October 2024. The well was completed as planned and handed over to production. Key challenges included poor cement bonding and equipment failure, both of which were resolved. The completion met all objectives, and operations proceeded without major complications beyond the identified issues.
+
+2. Operations Overview
+
+The completion of Well-2847-NX followed a standard sequence for the Bunter formation. The well was prepared for completion after reaching the measured depth of 3941.2 m. The process included running the production casing, cementing operations, and displacement to completion brine. Following cementing, logging was conducted to verify the quality of the cement job. Once all completion activities were completed, the well was handed over to production. The overall sequence was executed in accordance with the planned completion strategy, with the exception of two notable issues that arose during the process.
+
+3. Issues Encountered
+
+The first issue encountered was related to the cement bond log, which indicated poor bonding in the interval from 1256 to 1360 m MD. This was addressed by performing a remedial squeeze of 34 bbl, which improved the bond quality, as confirmed by the repeat log. The second issue involved MUD-PUMP-04, which tripped on fault FLT-0392 during the displacement to completion brine. The fault was identified as a piston seal leak, which caused an 8-hour delay in operations while the seal was replaced. This equipment failure contributed to non-productive time but did not prevent the well from being completed successfully. Both issues were resolved in a timely manner, ensuring the well met its completion objectives.
+
+4. Recommendations
+
+To improve future completions, it is recommended to enhance casing centralisation and review the spacer design for the production casing cement job. Additionally, mud pump piston seals should be replaced prior to critical displacement operations, rather than waiting until they reach the 500-hour limit. These measures aim to reduce the risk of equipment failure and improve the quality of cementing operations, ensuring more reliable and efficient completions in the future.

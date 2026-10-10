@@ -1,0 +1,209 @@
+[
+  {
+    "well_id": "WELL-2847-NX",
+    "operator": "Northmoor Energy",
+    "completion_date": "2024-10-20",
+    "depth_md": 3941.2,
+    "formation": "Bunter",
+    "completion_status": "Successful",
+    "outcome": "The well was completed as planned and handed over to production.",
+    "issues": [
+      {
+        "type": "cement_bond",
+        "fact": "The cement bond log showed poor bonding across 1256-1360 m MD; a remedial squeeze of 34 bbl was performed and the repeat log was acceptable."
+      },
+      {
+        "type": "mud_pump",
+        "fact": "MUD-PUMP-04 tripped on fault FLT-0392 (piston seal leak) during displacement to completion brine, causing 8 hours of non-productive time while the seal was replaced."
+      }
+    ],
+    "recommendations": [
+      "Improve casing centralisation and review the spacer design for the production casing cement job.",
+      "Replace mud pump piston seals ahead of critical displacement operations rather than running them to the 500-hour limit."
+    ],
+    "source": "WELL-2847-NX.txt"
+  },
+  {
+    "well_id": "WELL-3120-SE",
+    "operator": "Caldera Offshore",
+    "completion_date": "2024-07-05",
+    "depth_md": 4493.0,
+    "formation": "Bunter",
+    "completion_status": "Successful",
+    "outcome": "The well was completed as planned and handed over to production.",
+    "issues": [
+      {
+        "type": "perforating",
+        "fact": "Perforating gun misfire on run 4: the guns across 1318-1329 m MD did not fire and the interval was re-perforated on an additional run."
+      },
+      {
+        "type": "packer",
+        "fact": "The production packer failed to set on the first attempt at 4205 m MD; it was retrieved, redressed and set on the second run, adding 15 hours of rig time."
+      },
+      {
+        "type": "wireline",
+        "fact": "The wireline logging tool became stuck at 3161 m MD and a fishing operation lasting 19 hours was needed to recover it."
+      }
+    ],
+    "recommendations": [
+      "Verify detonator continuity at surface and carry a backup firing head for each perforating run.",
+      "Function-test packer setting tools at surface before running in hole.",
+      "Run a wiper trip and condition the hole before open-hole wireline logging."
+    ],
+    "source": "WELL-3120-SE.txt"
+  },
+  {
+    "well_id": "WELL-1975-NW",
+    "operator": "Caldera Offshore",
+    "completion_date": "2024-02-24",
+    "depth_md": 4032.7,
+    "formation": "Chalk",
+    "completion_status": "Partial",
+    "outcome": "Only the upper zone was completed; the lower zone was isolated with a bridge plug at 3785 m MD.",
+    "issues": [
+      {
+        "type": "cement_bond",
+        "fact": "The cement bond log showed poor bonding across 1853-1913 m MD; a remedial squeeze of 26 bbl was performed and the repeat log was acceptable."
+      },
+      {
+        "type": "wellhead",
+        "fact": "The tubing hanger seal leaked during the 6500 psi wellhead pressure test; the seal was replaced and the repeat test held."
+      }
+    ],
+    "recommendations": [
+      "Improve casing centralisation and review the spacer design for the production casing cement job.",
+      "Inspect tubing hanger seal surfaces before landing and keep a spare seal kit on location."
+    ],
+    "source": "WELL-1975-NW.pdf"
+  },
+  {
+    "well_id": "WELL-4406-EA",
+    "operator": "Halden Petroleum",
+    "completion_date": "2024-06-29",
+    "depth_md": 2649.0,
+    "formation": "Chalk",
+    "completion_status": "Abandoned",
+    "outcome": "The reservoir section was found to be water-bearing; the well was plugged and abandoned with cement plugs set at 2150 m MD and at surface.",
+    "issues": [
+      {
+        "type": "packer",
+        "fact": "The production packer failed to set on the first attempt at 2061 m MD; it was retrieved, redressed and set on the second run, adding 36 hours of rig time."
+      },
+      {
+        "type": "h2s",
+        "fact": "H2S was detected at surface at 32 ppm during clean-up flow; operations were suspended for 7 hours while the area was ventilated."
+      }
+    ],
+    "recommendations": [
+      "Function-test packer setting tools at surface before running in hole.",
+      "Add continuous H2S monitoring and scavenger treatment to the clean-up programme."
+    ],
+    "source": "WELL-4406-EA.txt"
+  },
+  {
+    "well_id": "WELL-2261-SX",
+    "operator": "Northmoor Energy",
+    "completion_date": "2024-05-06",
+    "depth_md": 3098.5,
+    "formation": "Rotliegend",
+    "completion_status": "Successful",
+    "outcome": "The well was completed as planned and handed over to production.",
+    "issues": [
+      {
+        "type": "lost_circulation",
+        "fact": "Lost circulation at 1526 m MD with total losses of 200 m3 of drilling fluid; losses were cured with two LCM pills before casing was run."
+      },
+      {
+        "type": "h2s",
+        "fact": "H2S was detected at surface at 16 ppm during clean-up flow; operations were suspended for 10 hours while the area was ventilated."
+      },
+      {
+        "type": "mud_pump",
+        "fact": "MUD-PUMP-04 tripped on fault FLT-0392 (piston seal leak) during displacement to completion brine, causing 13 hours of non-productive time while the seal was replaced."
+      }
+    ],
+    "recommendations": [
+      "Pre-treat the mud system with lost-circulation material before entering the loss zone.",
+      "Add continuous H2S monitoring and scavenger treatment to the clean-up programme.",
+      "Replace mud pump piston seals ahead of critical displacement operations rather than running them to the 500-hour limit."
+    ],
+    "source": "WELL-2261-SX.txt"
+  },
+  {
+    "well_id": "WELL-3589-NX",
+    "operator": "Northmoor Energy",
+    "completion_date": "2024-09-03",
+    "depth_md": 3186.9,
+    "formation": "Zechstein",
+    "completion_status": "Partial",
+    "outcome": "Only the upper zone was completed; the lower zone was isolated with a bridge plug at 2812 m MD.",
+    "issues": [
+      {
+        "type": "lost_circulation",
+        "fact": "Lost circulation at 1335 m MD with total losses of 200 m3 of drilling fluid; losses were cured with two LCM pills before casing was run."
+      },
+      {
+        "type": "perforating",
+        "fact": "Perforating gun misfire on run 3: the guns across 913-926 m MD did not fire and the interval was re-perforated on an additional run."
+      }
+    ],
+    "recommendations": [
+      "Pre-treat the mud system with lost-circulation material before entering the loss zone.",
+      "Verify detonator continuity at surface and carry a backup firing head for each perforating run."
+    ],
+    "source": "WELL-3589-NX.pdf"
+  },
+  {
+    "well_id": "WELL-1402-SE",
+    "operator": "Halden Petroleum",
+    "completion_date": "2024-10-31",
+    "depth_md": 2702.2,
+    "formation": "Chalk",
+    "completion_status": "Successful",
+    "outcome": "The well was completed as planned and handed over to production.",
+    "issues": [
+      {
+        "type": "packer",
+        "fact": "The production packer failed to set on the first attempt at 2251 m MD; it was retrieved, redressed and set on the second run, adding 29 hours of rig time."
+      },
+      {
+        "type": "h2s",
+        "fact": "H2S was detected at surface at 47 ppm during clean-up flow; operations were suspended for 6 hours while the area was ventilated."
+      },
+      {
+        "type": "wireline",
+        "fact": "The wireline logging tool became stuck at 1333 m MD and a fishing operation lasting 27 hours was needed to recover it."
+      }
+    ],
+    "recommendations": [
+      "Function-test packer setting tools at surface before running in hole.",
+      "Add continuous H2S monitoring and scavenger treatment to the clean-up programme.",
+      "Run a wiper trip and condition the hole before open-hole wireline logging."
+    ],
+    "source": "WELL-1402-SE.txt"
+  },
+  {
+    "well_id": "WELL-4033-NW",
+    "operator": "Northmoor Energy",
+    "completion_date": "2024-05-20",
+    "depth_md": 3228.7,
+    "formation": "Chalk",
+    "completion_status": "Successful",
+    "outcome": "The well was completed as planned and handed over to production.",
+    "issues": [
+      {
+        "type": "h2s",
+        "fact": "H2S was detected at surface at 52 ppm during clean-up flow; operations were suspended for 4 hours while the area was ventilated."
+      },
+      {
+        "type": "wellhead",
+        "fact": "The tubing hanger seal leaked during the 7500 psi wellhead pressure test; the seal was replaced and the repeat test held."
+      }
+    ],
+    "recommendations": [
+      "Add continuous H2S monitoring and scavenger treatment to the clean-up programme.",
+      "Inspect tubing hanger seal surfaces before landing and keep a spare seal kit on location."
+    ],
+    "source": "WELL-4033-NW.txt"
+  }
+]

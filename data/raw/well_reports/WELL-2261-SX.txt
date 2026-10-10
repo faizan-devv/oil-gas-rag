@@ -1,0 +1,24 @@
+WELL COMPLETION REPORT SUMMARY
+
+Well ID: WELL-2261-SX
+Operator: Northmoor Energy
+Completion Date: 2024-05-06
+Measured Depth (m): 3098.5
+Formation: Rotliegend
+Completion Status: Successful
+
+1. Summary
+
+Well WELL-2261-SX, operated by Northmoor Energy in the Rotliegend formation, was successfully completed on 2024-05-06. The well was completed as planned and handed over to production. Key challenges included lost circulation, H2S detection, and a mud pump failure. These issues were managed effectively, allowing the well to reach its completion objective without major delays or safety incidents.
+
+2. Operations Overview
+
+The completion of WELL-2261-SX followed a standard procedure for the Rotliegend formation. The well was drilled to a measured depth of 3098.5 m and prepared for completion with appropriate casing and cementing operations. Following the drilling phase, the well was cleaned and prepared for the installation of completion equipment. The completion brine was displaced as part of the final preparation for production. Throughout the process, the well was monitored for integrity and performance, ensuring that all steps were carried out in accordance with the planned completion strategy.
+
+3. Issues Encountered
+
+During the completion of WELL-2261-SX, a loss circulation event occurred at 1526 m MD, resulting in the loss of 200 m3 of drilling fluid. This issue was resolved by applying two LCM pills prior to running the casing, which helped to seal the lost circulation zone and prevent further fluid loss. A secondary challenge arose when H2S was detected at the surface at a concentration of 16 ppm during the clean-up flow. This led to an immediate suspension of operations for 10 hours while the area was ventilated to ensure safety and compliance with H2S management protocols. A third issue occurred when MUD-PUMP-04 tripped on fault FLT-0392, specifically a piston seal leak, during the displacement to completion brine. This caused 13 hours of non-productive time while the seal was replaced, highlighting the need for more proactive maintenance of critical equipment.
+
+4. Recommendations
+
+To prevent similar issues in future operations, it is recommended that the mud system be pre-treated with lost-circulation material before entering known loss zones. Continuous H2S monitoring and scavenger treatment should be incorporated into the clean-up programme to manage potential gas exposure. Additionally, mud pump piston seals should be replaced ahead of critical displacement operations rather than waiting until they reach the 500-hour limit to reduce the risk of unexpected failures.

@@ -1,0 +1,24 @@
+WELL COMPLETION REPORT SUMMARY
+
+Well ID: WELL-4406-EA
+Operator: Halden Petroleum
+Completion Date: 2024-06-29
+Measured Depth (m): 2649.0
+Formation: Chalk
+Completion Status: Abandoned
+
+1. Summary
+
+Well-4406-EA, operated by Halden Petroleum in the Chalk formation, was completed on 2024-06-29 and subsequently plugged and abandoned. The reservoir section was found to be water-bearing, leading to the decision to abandon the well. Cement plugs were set at 2150 m MD and at the surface. The completion process encountered operational challenges, including a failed production packer and the presence of H2S, which required additional time and safety measures.
+
+2. Operations Overview
+
+The completion of Well-4406-EA followed a standard procedure for the Chalk formation. The well was drilled to a measured depth of 2649.0 m and prepared for completion. The primary objective was to evaluate the reservoir section for hydrocarbon production. After determining the section to be water-bearing, the well was prepared for abandonment. Cement plugs were set at 2150 m MD and at the surface to ensure safe and permanent closure. The completion process involved running and setting downhole tools, followed by clean-up operations to remove fluids and confirm the well’s status. The operations were conducted in accordance with standard procedures, with necessary adjustments made to address encountered issues.
+
+3. Issues Encountered
+
+During the completion of Well-4406-EA, the production packer failed to set on the first attempt at 2061 m MD. This resulted in the need to retrieve the packer, reposition it, and attempt the setting again. The additional run significantly extended the operation and added 36 hours of rig time, impacting the overall schedule and increasing operational costs. A separate issue arose when H2S was detected at the surface during the clean-up flow at a concentration of 32 ppm. This prompted an immediate suspension of operations for 7 hours to allow for proper ventilation and ensure the safety of personnel. The presence of H2S required additional monitoring and handling procedures, highlighting the importance of maintaining strict safety protocols during well completion and abandonment activities.
+
+4. Recommendations
+
+To prevent similar issues in future operations, it is recommended that all packer setting tools be function-tested at the surface before running in hole. This will ensure their proper operation and reduce the risk of downhole failures. Additionally, continuous H2S monitoring and the inclusion of scavenger treatment in the clean-up programme should be implemented to enhance safety and manage potential gas exposure during operations.
