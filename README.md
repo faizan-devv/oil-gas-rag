@@ -42,6 +42,8 @@ uv run pytest                              # Task 4 tests (offline)
 uv run uvicorn app.api.main:app --port 8000
 ```
 
+The same commands are wrapped in a [Makefile](Makefile): `make help` lists them, for example `make install`, `make ask Q="..."`, `make evals`, `make test`, `make serve`, `make docker-build` and `make docker-run`.
+
 The corpus is committed, so nothing needs regenerating. To rebuild it: `uv run python scripts/generate_corpus.py`.
 
 Configuration is read from `CHATBOT_*` environment variables or `.env` ([src/app/config.py](src/app/config.py)):
